@@ -2,7 +2,7 @@
 title: "Description of aspect importance method"
 author: "Katarzyna Pękala"
 date: "`r Sys.Date()`"
-output: rmarkdown::pdf_document
+output: rmarkdown::html_document
 vignette: >
   %\VignetteIndexEntry{Description of aspect importance method}
   %\VignetteEncoding{UTF-8}
