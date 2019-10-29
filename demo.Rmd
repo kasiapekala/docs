@@ -33,7 +33,7 @@ forest model, group features into aspects and choose new observation to be expla
 ```{r}
 library("DALEX")
 library("randomForest")
-library(ingredients)
+library("DALEXtra")
 titanic <- titanic_imputed
 titanic$country <- NULL
 titanic_without_target <- titanic[,colnames(titanic)!="survived"]
