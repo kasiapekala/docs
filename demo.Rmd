@@ -35,7 +35,6 @@ library("DALEX")
 library("randomForest")
 library("DALEXtra")
 titanic <- titanic_imputed
-titanic$country <- NULL
 titanic_without_target <- titanic[,colnames(titanic)!="survived"]
 
 aspects_titanic <-
@@ -48,7 +47,7 @@ aspects_titanic <-
 
 passenger <- titanic_without_target[4,]
 
-model_titanic_rf <- randomForest(factor(survived) == "yes" ~ gender + age + 
+model_titanic_rf <- randomForest(factor(survived) == 1 ~ gender + age + 
                                    class + embarked + fare + sibsp + parch,  
                                  data = titanic)
 
